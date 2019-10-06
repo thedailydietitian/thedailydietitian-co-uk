@@ -2,6 +2,7 @@
   {% include "../../../../node_modules/normalize.css/normalize.css" %}
   {% include "css/main.css" %}
 {% endset %}
+{% set js %}{% include "js/netlify-cms-redirect.js" %}{% endset %}
 
 <!DOCTYPE html>
 <html lang="en-GB">
@@ -19,16 +20,6 @@
       {{ content | safe }}
       {% include "partials/footer.njk" %}
     </div>
-    <script>
-      if (window.netlifyIdentity) {
-        window.netlifyIdentity.on('init', user => {
-          if (!user) {
-            window.netlifyIdentity.on('login', () => {
-              document.location.href = '/admin/';
-            });
-          }
-        });
-      }
-    </script>
+    <script>{{ js | jsmin | safe }}</script>
   </body>
 </html>
