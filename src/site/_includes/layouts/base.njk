@@ -1,0 +1,22 @@
+{% set css %}
+  {% include "../../../../node_modules/normalize.css/normalize.css" %}
+  {% include "css/main.css" %}
+{% endset %}
+
+<!DOCTYPE html>
+<html lang="en-GB">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ title or site.title }}</title>
+    <meta name="description" content="{{ description or site.description }}">
+    <style>{{ css | cssmin | safe }}</style>
+  </head>
+  <body>
+    <div class="page">
+      {% include "partials/masthead.njk" %}
+      {{ content | safe }}
+      {% include "partials/footer.njk" %}
+    </div>
+  </body>
+</html>

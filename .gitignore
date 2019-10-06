@@ -1,0 +1,9 @@
+# Files
+.DS_Store
+*.log
+
+# Dirs.
+/coverage
+/cypress/snapshots/*/__diff_output__
+/node_modules
+/public
