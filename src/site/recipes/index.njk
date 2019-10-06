@@ -2,7 +2,15 @@
 layout: "base"
 title: "The Daily Dietitian – Recipes"
 description: "Recipes written by The Daily Dietitian."
+tags: []
 ---
 <main class="container">
   <h1>Recipes</h1>
+  <ul>
+    {% for recipe in collections.recipe | reverse %}
+      <li>
+        <h2><a href="{{ recipe.url }}">{{ recipe.data.title }}</a></h2>
+      </li>
+    {% endfor %}
+  </ul>
 </main>
