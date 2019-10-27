@@ -25,18 +25,17 @@ fields:
     display_utc: false
   default: now
 - name: type
-  type: select
-  default: Dinner
+  type: list
   config:
-    required: true
+    use_select: true
+    min: '1'
+    max: '4'
+    source:
+      type: simple
     options:
     - Breakfast
     - Lunch
     - Dinner
     - Snack
-    source:
-      type: simple
-      section: 
-      file: 
-      path: 
   label: Type
+  description: What type of meal is this?
