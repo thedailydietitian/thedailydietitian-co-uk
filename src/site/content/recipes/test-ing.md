@@ -5,4 +5,4 @@ layout: recipe
 title: Testing
 tags: recipe
 ---
-Another test post.
+Another testing post.
