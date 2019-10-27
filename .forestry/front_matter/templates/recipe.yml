@@ -38,6 +38,13 @@ fields:
     - Dinner
     - Snack
   label: Type
+- name: ingredients
+  type: list
+  config:
+    use_select: false
+    min: '1'
+    max: 
+  label: Ingredients
 - name: nutrition_component
   type: list
   config:
