@@ -1,0 +1,1 @@
+{"type":"PR","pr":{"number":2,"head":"a661df02fbcea41b2a0175ceb2e1407f6d900b9e"},"user":"Simon Sinclair","status":"draft","branch":"cms/foo","collection":"recipes","title":"Foo Bar","description":"No Description!","objects":{"entry":{"path":"src/site/content/recipes/foo.md","sha":"a8693d8a196783ca08ebcbd1b4a04cd6b1402374"},"files":[]},"timeStamp":"2019-10-27T19:02:35.611Z"}
