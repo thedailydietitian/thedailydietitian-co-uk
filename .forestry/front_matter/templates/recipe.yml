@@ -4,14 +4,8 @@ hide_body: false
 display_field: title
 fields:
 - type: text
-  name: slug
-  label: Slug
-  description: The unique part of the URL that identifies the page.
-  config:
-    required: true
-- type: text
   name: title
   label: Title
-  description: The H1 that appears at the top of the recipe.
+  description: The title of the recipe. (H1)
   config:
     required: true
