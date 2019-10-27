@@ -38,4 +38,3 @@ fields:
     - Dinner
     - Snack
   label: Type
-  description: What type of meal is this?
