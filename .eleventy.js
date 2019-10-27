@@ -59,6 +59,7 @@ module.exports = config => {
     ui: false,
     ghostMode: false,
     online: false,
+    host: process.env.ELEVENTY_ENV === 'staging' ? '0.0.0.0' : null,
   });
 
   return {
