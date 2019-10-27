@@ -75,3 +75,11 @@ fields:
     - Egg
     - Dairy
   label: Allergens
+- name: freezer_friendly
+  type: boolean
+  label: Freezer Friendly
+  default: true
+- name: batchable
+  type: boolean
+  label: Batchable
+  description: Can this meal be batch-prepared?
