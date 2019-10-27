@@ -18,7 +18,7 @@ collections:
         label: Slug
         widget: string
         hint: A unique URL fragment.
-        pattern: [^[a-z0-9-]+$, Must be a valid URL fragment.]
+        pattern: ["^[a-z0-9-]+$", "Must be a valid URL fragment."]
       - label: Permalink
         name: permalink
         widget: hidden
