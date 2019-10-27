@@ -1,5 +1,9 @@
 ---
+slug: "chicken-chicory-apple-walnut-salad"
+permalink: "/recipes/{{ slug }}/index.html"
+layout: "recipe"
 title: "Chicken, chicory, apple, walnut, and feta salad"
+tags: ["recipe"]
 ---
 1. Heat over to 100oC and cut up any veggies you want to use.
 2. Scatter harder ones like potato, pumpkin or sweet potato on the tray first.
