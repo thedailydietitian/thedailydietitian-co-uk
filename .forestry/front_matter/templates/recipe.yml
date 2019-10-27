@@ -50,3 +50,16 @@ fields:
     - High Protein
     - Low Carb
   label: Nutrition Component
+- name: dietary_preference
+  type: list
+  config:
+    use_select: true
+    min: 
+    max: 
+    source:
+      type: simple
+    options:
+    - Vegetarian
+    - Vegan
+    - Halal
+  label: Dietary Preference
