@@ -9,3 +9,19 @@ fields:
   description: The title of the recipe. (H1)
   config:
     required: true
+- name: image
+  type: file
+  config:
+    maxSize: '1'
+  label: Image
+  description: An enticing image relating to the recipe.
+- name: time_published
+  type: datetime
+  label: Date Published
+  description: The date and time the recipe was published.
+  config:
+    required: true
+    date_format: DD/MM/YYY
+    time_format: ''
+    display_utc: false
+  default: now
