@@ -1,5 +1,4 @@
 ---
-slug: hello-world
-title: Hello, World!
+title: Hello, World
 ---
 This is a test.

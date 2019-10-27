@@ -1,5 +1,4 @@
 ---
-slug: chicken-chicory-apple-walnut-salad
 title: Chicken, chicory, apple, walnut, and feta salad
 ---
 1. Heat over to 100oC and cut up any veggies you want to use.
