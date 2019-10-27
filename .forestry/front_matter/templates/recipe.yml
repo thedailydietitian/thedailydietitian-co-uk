@@ -6,7 +6,6 @@ fields:
 - type: text
   name: title
   label: Title
-  description: The title of the recipe. (H1)
   config:
     required: true
 - name: image
@@ -14,14 +13,14 @@ fields:
   config:
     maxSize: '1'
   label: Image
-  description: An enticing image relating to the recipe.
+  description: An enticing image.
 - name: time_published
   type: datetime
   label: Date Published
   description: The date and time the recipe was published.
   config:
     required: true
-    date_format: DD/MM/YYY
+    date_format: DD/MM/YYYY
     time_format: ''
     display_utc: false
   default: now
