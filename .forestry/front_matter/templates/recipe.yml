@@ -1,0 +1,11 @@
+---
+label: Recipe
+hide_body: false
+display_field: title
+fields:
+- type: text
+  name: title
+  label: Title
+  description: The title of the recipe. (H1)
+  config:
+    required: true
