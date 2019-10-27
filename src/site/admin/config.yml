@@ -12,13 +12,13 @@ collections:
     folder: src/site/content/recipes
     create: true
     format: yaml-frontmatter
-    slug: {{fields.slug}}
+    slug: "{{ fields.slug }}"
     fields:
       - name: slug
         label: Slug
         widget: string
         hint: A unique URL fragment.
-        pattern: ["^[a-z0-9-]+$", "Must be a valid URL fragment."]
+        pattern: ["^[a-z0-9-]+$", Must be a valid URL fragment.]
       - label: Permalink
         name: permalink
         widget: hidden
