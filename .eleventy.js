@@ -7,7 +7,6 @@ module.exports = config => {
   config.addLayoutAlias('base', 'layouts/base.njk');
   config.addLayoutAlias('recipe', 'layouts/recipe.njk');
 
-  config.addPassthroughCopy({ 'src/site/content/assets': 'assets' });
   config.addPassthroughCopy('src/site/admin');
   config.addPassthroughCopy('src/site/assets');
   config.addPassthroughCopy('src/site/favicon.ico');

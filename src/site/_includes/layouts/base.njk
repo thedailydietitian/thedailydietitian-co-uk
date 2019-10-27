@@ -2,7 +2,6 @@
   {% include "../../../../node_modules/normalize.css/normalize.css" %}
   {% include "css/main.css" %}
 {% endset %}
-{% set js %}{% include "js/netlify-cms-redirect.js" %}{% endset %}
 
 <!DOCTYPE html>
 <html lang="en-GB">
@@ -12,7 +11,6 @@
     <title>{{ title or site.title }}</title>
     <meta name="description" content="{{ description or site.description }}">
     <style>{{ css | cssmin | safe }}</style>
-    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   </head>
   <body>
     <div class="page">
@@ -20,6 +18,5 @@
       {{ content | safe }}
       {% include "partials/footer.njk" %}
     </div>
-    <script>{{ js | jsmin | safe }}</script>
   </body>
 </html>
