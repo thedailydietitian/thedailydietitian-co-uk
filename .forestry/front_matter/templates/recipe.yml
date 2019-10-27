@@ -90,3 +90,5 @@ fields:
   type: boolean
   label: Batchable
   description: Can this meal be batch-prepared?
+pages:
+- src/site/recipes/another-test.md
