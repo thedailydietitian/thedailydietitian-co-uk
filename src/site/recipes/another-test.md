@@ -21,4 +21,20 @@ allergens:
 batchable: true
 
 ---
-This is a test.
+**Ingredients** 
+
+1 tbsp olive oil 
+
+1 onion or shallot 
+
+4 rashers of bacon 
+
+200g spring greens or Savoy cabbage 
+
+150g whole meal pasta 
+
+180g peas 
+
+150g cream cheese with garlic and herbs 
+
+black pepper 
