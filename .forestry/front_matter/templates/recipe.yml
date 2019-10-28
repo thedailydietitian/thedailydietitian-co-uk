@@ -92,3 +92,4 @@ fields:
   description: Can this meal be batch-prepared?
 pages:
 - src/site/recipes/another-test.md
+- src/site/recipes/test.md
