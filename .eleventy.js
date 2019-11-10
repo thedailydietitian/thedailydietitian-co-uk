@@ -9,7 +9,6 @@ module.exports = config => {
 
   config.addPassthroughCopy('src/site/admin');
   config.addPassthroughCopy('src/site/assets');
-  config.addPassthroughCopy('src/site/_redirects');
   config.addPassthroughCopy('src/site/favicon.ico');
   config.addPassthroughCopy('src/site/robots.txt');
   config.addPassthroughCopy('src/site/sitemap.xml');
