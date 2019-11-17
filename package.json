@@ -23,6 +23,7 @@
   "author": "Simon Sinclair",
   "license": "UNLICENSED",
   "dependencies": {
+    "got": "^9.6.0",
     "normalize.css": "^8.0.1"
   },
   "devDependencies": {
