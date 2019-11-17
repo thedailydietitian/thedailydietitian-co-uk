@@ -1,17 +1,13 @@
 ---
-permalink: /recipes/index.html
 layout: "base"
-tags:
 title: "The Daily Dietitian – Recipes"
 description: "Recipes by The Daily Dietitian."
 ---
 <main class="container">
   <h1>Recipes</h1>
   <ul>
-    {% for recipe in collections.recipe | reverse %}
-      <li>
-        <h2><a href="{{ recipe.url }}">{{ recipe.data.title }}</a></h2>
-      </li>
+    {% for recipe in recipes %}
+      <li>{{recipe.name}}</li>
     {% endfor %}
   </ul>
 </main>
