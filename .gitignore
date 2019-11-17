@@ -1,7 +1,5 @@
 # Files
-.env
 .DS_Store
-*.log
 
 # Dirs.
 /coverage
