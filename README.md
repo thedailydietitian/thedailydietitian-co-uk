@@ -1,4 +1,4 @@
-# thedailydietitian.co.uk
+# The Daily Dietitian
 
 A static site built using Eleventy.
 
