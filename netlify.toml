@@ -6,7 +6,6 @@
 
 # Holding.
 [[redirects]]
-  from = "/"
+  from = "/*"
   to = "/about"
   status = 302
-  force = true
