@@ -1,11 +1,20 @@
 :root {
-  --brand: #126872;
+  --text: #444444;
+  --accent: #1976D2;
 }
 
 html {
   box-sizing: border-box;
-  font-size: 18px;
-  line-height: 27px;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+@media (min-width: 480px) {
+  html {
+    box-sizing: border-box;
+    font-size: 18px;
+    line-height: 27px;
+  }
 }
 
 *,
@@ -15,47 +24,10 @@ html {
 }
 
 body {
-  color: var(--brand);
+  color: var(--text);
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   font-size: 1rem;
   line-height: 1.5rem;
-}
-
-@supports (display: grid) {
-  html,
-  body {
-    height: 100%;
-  }
-
-  .page {
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-    min-height: 100%;
-  }
-  .page--holding {
-    color: #333;
-  }
-
-  .page > header,
-  .page > main,
-  .page > footer {
-    width: 100%;
-  }
-
-  .page > header {
-    grid-row-start: 1;
-    grid-row-end: 2;
-  }
-
-  .page > main {
-    grid-row-start: 2;
-    grid-row-end: 3;
-  }
-
-  .page > footer {
-    grid-row-start: 3;
-    grid-row-end: 4;
-  }
 }
 
 h1,
@@ -87,7 +59,7 @@ ul {
 }
 
 a {
-  color: inherit;
+  color: var(--accent);
 }
 
 .container {
@@ -98,8 +70,27 @@ a {
   padding-left: 1.5rem;
 }
 
-.section {
+section {
   margin-top: 3rem;
+}
+
+@media (min-width: 512px) {
+  section {
+    margin-left: calc(128px + 8px);
+    position: relative;
+  }
+}
+
+.avatar {
+  border-radius: 50%;
+  max-width: 120px;
+}
+
+@media (min-width: 512px) {
+  .avatar {
+    position: absolute;
+    top: 0; left: calc(-128px - 8px);
+  }
 }
 
 .nav-list {
@@ -120,33 +111,4 @@ a {
 .nav-list--inline {
   display: flex;
   flex-wrap: wrap;
-}
-
-
-/* -------- */
-/* PARTIALS */
-/* -------- */
-
-.masthead {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 1.5rem;
-}
-
-.masthead__logotype {
-  font-style: normal;
-  font-weight: 700;
-  margin-top: 1.5rem;
-  margin-right: 1.5rem;
-  white-space: nowrap;
-}
-
-.nav-bar > .nav-list--inline {
-  justify-content: flex-end;
-  margin-top: 0.75rem;
-}
-
-.footer {
-  margin-top: 3rem;
-  padding-bottom: 1.5rem;
 }
