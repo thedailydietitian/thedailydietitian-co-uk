@@ -3,3 +3,9 @@
   to = "https://www.thedailydietitian.co.uk"
   status = 301
   force = true
+
+# Holding.
+[[redirects]]
+  from = "/"
+  to = "/about"
+  status = 302
