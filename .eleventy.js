@@ -5,6 +5,7 @@ const Terser = require('terser');
 
 module.exports = config => {
   config.addLayoutAlias('base', 'layouts/base.njk');
+  config.addLayoutAlias('holding', 'layouts/holding.njk');
   config.addLayoutAlias('recipe', 'layouts/recipe.njk');
 
   config.addPassthroughCopy('src/site/admin');
