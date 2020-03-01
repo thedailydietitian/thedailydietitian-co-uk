@@ -10,11 +10,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ title or site.title }}</title>
     <meta name="description" content="{{ description or site.description }}">
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Roboto&display=swap" rel="stylesheet">
     <style>{{ css | cssmin | safe }}</style>
   </head>
   <body>
-    <div class="page">
+    <div class="page page--holding">
       {{ content | safe }}
     </div>
   </body>

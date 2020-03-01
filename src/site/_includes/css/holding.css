@@ -1,6 +1,5 @@
 :root {
-  --text: rgba(0, 0, 0, 0.84);
-  --accent: #1976D2;
+  --text: rgba(0, 0, 0, 0.8);
 }
 
 html {
@@ -11,7 +10,6 @@ html {
 
 @media (min-width: 480px) {
   html {
-    box-sizing: border-box;
     font-size: 18px;
     line-height: 27px;
   }
@@ -25,72 +23,82 @@ html {
 
 body {
   color: var(--text);
-  font-family: 'Roboto', sans-serif;
+  font-family: sans-serif;
   font-size: 1rem;
   line-height: 1.5rem;
 }
 
-h1,
-h2 {
-  font-family: 'Playfair Display', serif;
+html, body {
+  height: 100%;
+}
+
+h1 {
+  font-size: 1.9444444rem;
   font-weight: normal;
-  letter-spacing: -0.020em;
-}
-
-h1,
-.alpha {
-  font-size: 4.2222222rem;
-  line-height: 4.5rem;
-  margin-top: 1.5rem;
-  margin-bottom: 3rem;
-}
-
-h2,
-.beta {
-  font-size: 2.6111111rem;
   line-height: 3rem;
+  letter-spacing: -0.0625rem;
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
 }
 
-p,
-ul {
+h2 {
+  font-size: 1.5555556rem;
+  font-weight: normal;
+  line-height: 3rem;
+  letter-spacing: -0.03125rem;
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
+}
+
+p, ul, ol, pre, table, blockquote {
+  margin-top: 0rem;
+  margin-bottom: 1.5rem;
+}
+
+ul ul, ol ol, ul ol, ol ul {
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+}
+
+a, b, i, strong, em, small, code {
+  line-height: 0;
 }
 
 a {
   color: inherit;
 }
 
+/* 560px */
 .container {
-  margin-right: auto;
-  margin-left: auto;
-  max-width: 960px;
+  padding-top: 3rem;
   padding-right: 1.5rem;
   padding-left: 1.5rem;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 35rem;
 }
 
-section {
-  margin-top: 3rem;
-}
+/* .holding {} */
 
-@media (min-width: 512px) {
-  section {
-    margin-left: calc(96px + 1rem);
-    position: relative;
+/* 480px */
+@media (min-width: 30rem) {
+  .holding {
+    display: flex;
+    align-items: flex-start;
   }
 }
 
-.avatar {
+/* 64px */
+.holding__avatar {
   border-radius: 50%;
-  max-width: 96px;
+  max-width: 4rem;
+  margin-right: 1.5rem;
 }
 
-@media (min-width: 512px) {
-  .avatar {
-    position: absolute;
-    top: 0; left: calc(-96px - 1rem);
+/* 96px */
+@media (min-width: 30rem) {
+  .holding__avatar {
+    max-width: 6rem;
   }
 }
 
