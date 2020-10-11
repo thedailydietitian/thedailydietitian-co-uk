@@ -67,5 +67,7 @@ module.exports = (config) => {
       input: 'src/site',
       output: 'public',
     },
+    templateFormats: ['njk'],
+    htmlTemplateEngine: 'njk',
   };
 };
