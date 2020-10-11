@@ -7,7 +7,7 @@
   "main": "",
   "scripts": {
     "start": "npm run build && serve -l 8080 public",
-    "dev": "eleventy --serve",
+    "dev": "trash public && eleventy --serve",
     "test": "npm run test:unit",
     "test:unit": "jest --coverage --verbose",
     "test:unit:watch": "jest --watch --verbose",
