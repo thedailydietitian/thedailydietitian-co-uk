@@ -22,10 +22,10 @@
   "devDependencies": {
     "@11ty/eleventy": "^0.9.0",
     "clean-css": "^4.2.1",
-    "eslint": "^6.4.0",
-    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint": "^7.11.0",
+    "eslint-config-airbnb-base": "^14.2.0",
     "eslint-config-prettier": "^6.12.0",
-    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-import": "^2.22.1",
     "html-minifier": "^4.0.0",
     "jest": "^24.8.0",
     "prettier": "^2.1.2",
