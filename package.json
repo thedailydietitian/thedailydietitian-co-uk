@@ -3,7 +3,7 @@
   "name": "thedailydietitian",
   "version": "1.0.0",
   "description": "The Daily Dietitian",
-  "repository": "github:thedailydietitian/thedailydietitian",
+  "repository": "github:thedailydietitian/thedailydietitian-co-uk",
   "main": "",
   "scripts": {
     "test": "npm run test:unit",
