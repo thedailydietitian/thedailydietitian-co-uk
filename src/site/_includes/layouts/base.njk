@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ title or site.title }}</title>
     <meta name="description" content="{{ description or site.description }}">
+    <link rel="preload" as="font" crossorigin="crossorigin" type="font/woff2" href="/assets/fonts/noto-serif-v9-latin-regular.woff2">
+    <link rel="preload" as="font" crossorigin="crossorigin" type="font/woff2" href="/assets/fonts/noto-serif-v9-latin-700.woff2">
     <style>
       {% postcss "css/main.css" %}
       {% include "css/main.css" %}

@@ -3,7 +3,28 @@
 @tailwind utilities;
 
 @layer base {
+  @font-face {
+    font-display: swap;
+    font-family: 'Noto Serif';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Noto Serif'), local('NotoSerif'),
+      url('/assets/fonts/noto-serif-v9-latin-regular.woff2') format('woff2'),
+      url('/assets/fonts/noto-serif-v9-latin-regular.woff') format('woff');
+  }
+
+  @font-face {
+    font-display: swap;
+    font-family: 'Noto Serif';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Noto Serif Bold'), local('NotoSerif-Bold'),
+      url('/assets/fonts/noto-serif-v9-latin-700.woff2') format('woff2'),
+      url('/assets/fonts/noto-serif-v9-latin-700.woff') format('woff');
+  }
+
   html {
+    @apply font-serif;
     font-size: 18px;
   }
 
@@ -12,10 +33,10 @@
   }
 
   h1 {
-    @apply text-5xl tracking-tight;
+    @apply text-xl font-bold;
   }
 
   h2 {
-    @apply text-3xl;
+    @apply text-lg;
   }
 }
