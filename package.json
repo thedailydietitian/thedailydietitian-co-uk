@@ -15,7 +15,9 @@
   },
   "author": "Simon Sinclair",
   "license": "UNLICENSED",
-  "dependencies": {},
+  "dependencies": {
+    "tailwindcss": "^1.8.13"
+  },
   "devDependencies": {
     "@11ty/eleventy": "^0.11.0",
     "clean-css": "^4.2.3",
