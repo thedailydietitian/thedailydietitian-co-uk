@@ -6,12 +6,12 @@
   "repository": "github:thedailydietitian/thedailydietitian-co-uk",
   "main": "",
   "scripts": {
+    "start": "npm run build && serve -l 8080 public",
+    "dev": "eleventy --serve",
     "test": "npm run test:unit",
     "test:unit": "jest --coverage --verbose",
     "test:unit:watch": "jest --watch --verbose",
-    "start": "eleventy --serve",
-    "prebuild": "trash public",
-    "build": "eleventy"
+    "build": "trash public && NODE_ENV=production eleventy"
   },
   "author": "Simon Sinclair",
   "license": "UNLICENSED",
@@ -30,6 +30,7 @@
     "html-minifier": "^4.0.0",
     "jest": "^24.8.0",
     "prettier": "1.18.2",
+    "serve": "^11.3.2",
     "terser": "^4.3.1",
     "trash-cli": "^3.0.0"
   }
