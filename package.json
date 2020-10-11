@@ -7,8 +7,8 @@
   "main": "",
   "scripts": {
     "test": "npm run test:unit",
-    "test:unit": "jest --coverage",
-    "test:unit:watch": "jest --watch",
+    "test:unit": "jest --coverage --verbose",
+    "test:unit:watch": "jest --watch --verbose",
     "start": "eleventy --serve",
     "prebuild": "trash public",
     "build": "eleventy"
